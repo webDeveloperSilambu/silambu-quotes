@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILAMBARSAN | QUOTES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            background: none;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20% 20% 10% 20%;
+            background-color: #1e272e;
+        }
+        .btn{
+            text-align: center;
+            position: absolute;
+            top: 40px;
+            left: 42%;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            background-color: blue;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .home{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            background-color: blue;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .home a{
+            color: #fff;
+        }
+        .container{
+            color: #fff;
+        }
+        .container h1{
+            text-align: center;
+            font-weight: 500;
+            margin: 1rem 0rem;
+            color: bisque;
+        }
+        .container p{
+            margin: .7rem 0rem;
+        }
+        .container .title{
+            font-size: 1.5rem;
+        }
+        .container .author{
+            text-align: right;
+        }
+        .info{
+            margin-top: 2rem;
+            color: gray;
+        }
+        ul li{
+            margin-left: 2rem;
+        }
+        .container .about{
+            margin-top: 2rem;
+            text-align: center;
+            color: gray;
+        }
+        .container .about a{
+            color: yellow;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin: 0px 5px;
+        }
+        @media(max-width:900px){
+            html{
+                font-size: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="/login/quotes" method="post">
+    <button class="btn" onclick="window.location.reload()"><i class="fa-solid fa-rotate-right fa-shake"></i> refresh</button>
+    <div class="container">
+        <h1>QUOTES</h1>
+        <p class="title"><%= quote %>.</p>
+        <p class="author"> - <%= author %>.</p>
+        <button class="home"><a href="/">home</a></button>
+        <ul class="info">
+            <p>instrctions :-</p>
+            <li>click  refresh button to generate a random quotes . </li>
+            <li>mouse select to copy text to copy the quotes . </li>
+        </ul>
+        <p class="about">copyrights with © <a href="https://silambarasan-hacker.netlify.app">silambarasan-hacker</a> .</p>
+    </div>
+    </form>
+
+</body>
+</html>
